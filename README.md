@@ -12,8 +12,17 @@ The purpose of this analysis is to determine how different campaigns fared in re
 
 ### Analysis of Outcomes Based on Launch Date
 
+#### Pivot Table
+
+A pivot table showing values of campaign counts was created filtered to include only campaigns with a *Parent Cateogry* of *"theater"* and also exclued all *live* campaigns. The columns sliced the data by outcome, showing three categories: *"successful"*, *"failed"* and *"canceled"*.
 
 ![Excel Pivot table for Outcomes Based on Launch Date analysis](/resources/Theater_Outcomes_vs_Launch_Pivot_Table.png)
+
+#### Pivot Chart
+
+The data in the pivot table described above was translated to a line graph. The graph shows three lines, each representing one of the three outcomes in the pivot table. The X-axis represents the month of the year, and the Y-axis represents the number of campaigns.
+
+![Excel Pivot chart for Outcomes Based on Launch Date analysis](/resources/Theater_Outcomes_vs_Launch.png)
 
 ### Analysis of Outcomes Based on Goals
 
@@ -36,4 +45,4 @@ The dataset does not include descriptive data on the size of each campaign such 
 
 - What are some other possible tables and/or graphs that we could create?
 
-The *Theater Outcomes Based on Launch Date* graph charts campaigns based on their launch date, but We may want to show the same visualization by deadline to see what time of year is most successful to show a play. We may also want to consider success rates across other variables such as whether or not the Kickstarter campaign was a staff pick or spotlight campaign. Additional breakouts that may provide meaninful insights are annual trends and duration of the campaign.
+The *Theater Outcomes Based on Launch Date* graph charts campaigns based on their launch date, but We may want to show the same visualization by deadline to see what time of year is most successful to show a play. We may also want to create additional tables/graphs showing success rates across other variables such as whether or not the Kickstarter campaign was a staff pick or spotlight campaign. Additional breakouts for tables and graphs that may provide meaninful insights are annual trends and duration of the campaign.
