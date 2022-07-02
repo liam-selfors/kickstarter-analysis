@@ -26,6 +26,17 @@ The data in the pivot table described above was translated to a line graph. The 
 
 ### Analysis of Outcomes Based on Goals
 
+A table was created with a column of goal ranges starting with *below $1,000* and up to *$50,000 or more* divided into $5,000 increments. Columns were then created to summarize the total number of *"successful"*, *"failed"* and *"canceled"* campaigns that set a goal within the range given in that row.
+
+This data was compiled using Excel's conditional count forumla with four conditions `=COUNTIFS(Kickstarter!$F:$F,"successful",Kickstarter!$D:$D,"<1000",Kickstarter!R:R,"plays")`:
+1. Subcategory equal to *"plays"*
+2. Outcome equal to the value denoted in the column header
+3. Goal (less than) *(not including the upper bin)*
+4. Goal (greater than or equal to) *(not including the lower bin)*
+
+![Excel Pivot chart for Outcomes Based on Launch Date analysis](/resources/Outcomes_vs_Goals_Table.png)
+![Excel Pivot chart for Outcomes Based on Launch Date analysis](/resources/Outcomes_vs_Goals.png)
+
 ### Challenges and Difficulties Encountered
 
 ## Results
@@ -41,7 +52,7 @@ Smaller campaigns with goals less than $5,000 were most successful, and, in gene
 
 - What are some limitations of this dataset?
 
-The dataset does not include descriptive data on the size of each campaign such as the budget or size of target audience.
+The dataset does not include descriptive data on the size of each campaign such as the budget or size of target audience. The data also does not include other types of campaigns for the same initiatives for comparison of if there is a better fundraising medium.
 
 - What are some other possible tables and/or graphs that we could create?
 
