@@ -12,6 +12,9 @@ The purpose of this analysis is to determine how different campaigns fared in re
 
 ### Analysis of Outcomes Based on Launch Date
 
+
+![Excel Pivot table for Outcomes Based on Launch Date analysis](/resources/Theater_Outcomes_vs_Launch_Pivot_Table.png)
+
 ### Analysis of Outcomes Based on Goals
 
 ### Challenges and Difficulties Encountered
