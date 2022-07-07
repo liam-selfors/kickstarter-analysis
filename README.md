@@ -26,6 +26,8 @@ The data in the pivot table described above was translated to a line graph. The 
 
 ### Analysis of Outcomes Based on Goals
 
+#### Table
+
 A table was created with a column of goal ranges starting with *below $1,000* and up to *$50,000 or more* divided into $5,000 increments. Columns were then created to summarize the total number of *"successful"*, *"failed"* and *"canceled"* campaigns that set a goal within the range given in that row.
 
 Columns **B** through **D** was compiled using Excel's conditional count forumla with four conditions `=COUNTIFS(Kickstarter!$F:$F,"successful",Kickstarter!$D:$D,"<5000",Kickstarter!$D:$D,">=1000",Kickstarter!R:R,"plays")`:
@@ -37,6 +39,8 @@ Columns **B** through **D** was compiled using Excel's conditional count forumla
 Column **E** was compiled using Excel's SUM function `=SUM(B2:D2)` and was used in the calculations for the percentages in columns **F** through **H** using `=B2/$E2`.
 
 ![Excel Pivot chart for Outcomes Based on Launch Date analysis](/resources/Outcomes_vs_Goals_Table.png)
+
+#### Line Chart
 
 A line chart was created using columns **F** through **H** with our goal buckets on the X-axis and the percentage of the total projects on the Y-axis.
 
